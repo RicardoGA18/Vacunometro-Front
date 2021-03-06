@@ -1,0 +1,25 @@
+.Situation{
+  .l-contain{
+    padding: 60px 0 55px;
+  }
+  &__Chart{
+    width: 100%;
+    margin-bottom: 47px;
+    @include flexCenter;
+    border-radius: 6px;
+    box-shadow: $Shadow-Primary;
+  }
+  &__Title{
+    margin-bottom: 32px;
+    font-size: $m;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__Description{
+    font-size: $s;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: center;
+  }
+}

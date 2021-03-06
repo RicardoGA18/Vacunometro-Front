@@ -1,0 +1,50 @@
+.HospitalCard{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: $Light;
+  box-shadow: $Shadow-Primary;
+  &__Img{
+    img{
+      width: 100%;
+    }
+  }
+  &__Content{
+    padding: 20px 12px;
+  }
+  &__Title{
+    font-size: $s - 1px;
+    font-weight: 500;
+    color: $Dark;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+  &__Location{
+    font-size: $s - 1px;
+    color: $Dark;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 6px;
+    i{
+      margin-right: 3px;
+    }
+  }
+  &__Update{
+    font-size: $xs;
+    font-weight: 300;
+    line-height: 16px;
+    margin-bottom: 32px;
+    i{
+      margin-right: 3px;
+    }
+  }
+  &__Link{
+    font-size: $s - 1px;
+    text-transform: uppercase;
+    color: $Red;
+    font-weight: 400;
+    text-align: right;
+  }
+}

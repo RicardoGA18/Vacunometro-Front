@@ -1,0 +1,27 @@
+.Vaccine{
+  background-color: #F0F0F0;
+  .l-contain{
+    padding: 80px 0 40px;
+  }
+  &__Chart{
+    width: 100%;
+    margin-bottom: 35px;
+    @include flexCenter;
+    background-color: $Light;
+    border-radius: 6px;
+    box-shadow: $Shadow-Primary;
+  }
+  &__Title{
+    font-size: $m;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  &__Description{
+    font-size: $s;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: center;
+  }
+}

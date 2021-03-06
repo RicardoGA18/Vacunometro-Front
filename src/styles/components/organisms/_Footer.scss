@@ -1,0 +1,65 @@
+.Footer{
+  width: 100%;
+  background-color: $Red;
+  .l-contain{
+    padding: 34px 0 19px;
+  }
+  &__Logo{
+    display: flex;
+    margin-bottom: 47px;
+    img{
+      width: 35px;
+      height: 35px;
+      border-radius: 5px;
+      box-shadow: $Shadow-Primary;
+      margin-right: 5px;
+    }
+    p{
+      font-size: $xs + 1px;
+      font-weight: 500;
+      color: $Light;
+    }
+  }
+  &__Contact{
+    margin-bottom: 62px;
+    p{
+      color: $Light;
+      font-size: $s;
+      font-weight: 400;
+      margin-bottom: 26px;
+    }
+    ul{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 13px;
+      li span{
+        color: $Light;
+        font-size: $s;
+        font-weight: 400;
+      }
+    }
+  }
+  &__Services{
+    margin-bottom: 42px;
+    p{
+      color: $Light;
+      font-size: $s;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+    ul{
+      display: grid;
+      grid-template-columns: 1fr;
+      li span{
+        color: $Light;
+        font-size: $s;
+        font-weight: 400;
+      }
+    }
+  }
+  &__Copy{
+    font-size: $xs;
+    font-weight: 400;
+    color: $Light;
+  }
+}
