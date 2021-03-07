@@ -36,7 +36,7 @@ const Alert = () => {
 
   return (
     <div className="Alert l-container">
-      <img className="Alert__Background" src={bgGradient} />
+      <img className="Alert__Background" src={bgGradient} alt="Fondo con gradiente"/>
       <div className="l-contain">
         <div className="Alert__Chart">
           <Chart 

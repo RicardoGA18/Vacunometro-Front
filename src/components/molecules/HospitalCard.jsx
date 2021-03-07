@@ -6,7 +6,7 @@ const HospitalCard = () => {
   return (
     <div className="HospitalCard">
       <div className="HospitalCard__Img">
-        <img src={hospital} />
+        <img src={hospital} alt="Hospital" />
       </div>
       <div className="HospitalCard__Content">
         <p className="HospitalCard__Title">HOSPITAL REGIONAL HERMILIO VALDIZÁN</p>

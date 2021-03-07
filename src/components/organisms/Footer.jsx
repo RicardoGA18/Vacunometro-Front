@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="Footer l-container">
       <div className="l-contain">
         <div className="Footer__Logo">
-          <img src={logo}/>
+          <img src={logo} alt="Logo Vacunometro Peru" />
           <p>Vacunómetro<br />Perú</p>
         </div>
         <div className="Footer__Contact">

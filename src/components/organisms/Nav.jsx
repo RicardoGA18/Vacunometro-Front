@@ -6,10 +6,12 @@ const Nav = () => {
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
       const nav = document.querySelector('[data-dom="nav"]')
-      if(window.scrollY > 50){
-        nav.style.backgroundColor = "#E60000"
-      }else{
-        nav.style.backgroundColor = ""
+      if(nav){
+        if(window.scrollY > 50){
+          nav.style.backgroundColor = "#E60000"
+        }else{
+          nav.style.backgroundColor = ""
+        }
       }
     })
   },[])

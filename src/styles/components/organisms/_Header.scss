@@ -45,8 +45,10 @@
     }
     &-Search{
       position: relative;
+      z-index: 5;
       input[type="search"]{
         width: 100%;
+        position: relative;
         height: 48px;
         border: none;
         border-radius: 24px;
@@ -55,6 +57,7 @@
         font-size: $s + 1px ;
         font-weight: 500;
         box-shadow: $Shadow-Primary;
+        z-index: 2;
       }
       button{
         position: absolute;
@@ -66,9 +69,45 @@
         top: 4px;
         right: 4px;
         @include flexCenter;
+        z-index: 2;
         i{
           color: $Light;
         }
+      }
+      input[type="search"]:focus ~ .AutoComplete{
+        display: grid;
+      }
+      .AutoComplete{
+        position: absolute;
+        width: 100%;
+        padding-top: 24px;
+        display: none;
+        grid-template-columns: 1fr;
+        top: 24px;
+        min-height: 200px;
+        max-height: 400px;
+        overflow: auto;
+        background-color: $Light;
+        z-index: 1;
+        &__Item{
+          width: 100%;
+          height: 60px;
+          background-color: $Light;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0 25px;
+          p:nth-child(1){
+            font-size: $s;
+          }
+          p:nth-child(2){
+            font-size: $xs;
+          }
+        }
+      }
+      .AutoComplete:hover{
+        display: grid;
       }
     }
   }
